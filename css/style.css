@@ -1,0 +1,285 @@
+
+/* Step 1: Common Properties
+  These styles are required to make icons render reliably */
+  /* .box::before {
+    display: inline-block;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+  } */
+
+
+
+*{
+   box-sizing: border-box;
+
+}
+body{
+    font-family: "work-sans" , sans-serif;
+    /* height: 3500px; */
+}
+
+:root{
+  --p-color: #463030;
+    --main-color: #10CAB7;
+    --sub-head: #000;
+
+
+}
+
+.header{
+   background-color: #ffffff;
+   height: 12vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 36px;
+}
+
+i{
+    font-size: 24px;
+   
+}
+h1{
+    color: var(--main-color);
+    font-size: 3em;
+}
+p{
+    
+    margin-top: -10px;
+    font-size: 18px;
+}
+
+.main-pic{
+background-image: url(../images/pexels-chengxin-zhao-1218017-5493069.jpg);
+width: 100%;
+height:88vh;
+background-size: cover;
+background-position: center;
+
+  /* background-color: #ccc; */
+  text-align: center;
+    display: flex;
+   flex-flow: nowrap column;
+   justify-content: center;
+   /* align-items: center; */
+} 
+ .main-pic h2,p{
+   /* width: fit-content; */
+   
+   
+}
+
+.features{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #F6F6F6;
+  height: 65vh;
+}
+.box{
+  width: 30%;
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+  height: 80%;
+  padding: 15px;
+  position: relative;
+}
+.box p{
+ color: var(--p-color);
+ font-size: 16px;
+ line-height: 26px;
+}
+
+.box i{
+  color: var(--main-color);
+  font-size: 46px;
+  
+}
+
+.box *{
+   padding: 8px;
+
+}
+
+.services{
+  height: 120vh;
+  border-bottom: 1px #ccc solid;
+}
+
+.title{
+ text-align: center;
+  margin-bottom: 50px;
+  padding-top: 10px;
+}
+.title h1{
+  color: #EBECED;
+  font-size: 68px;
+  margin-bottom: -20px;
+}
+.title p{
+  color: #797979;
+}
+
+ 
+  .box2{
+    display: flex;
+    width: 45%;
+    background-color: #fff;
+  }
+  .service{
+
+    display: flex;}
+
+
+  .boxes{
+    /* background-color:limegreen; */
+    width: 70%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+  }
+  .icon{
+    height: 100%;
+    padding: 20px;
+  }
+  .icon i{
+    color: var(--main-color);
+    font-size: 30px;} 
+
+    .decor{
+      height: 80vh;
+      width:30%;
+      
+    }
+    .services img{
+      height: 100%;
+      width: 100%;
+    }
+
+    .portfolio{
+      background-color: #F6F6F6;
+      height: 100vh;
+    }
+
+
+      .cards{
+            display: flex;
+            justify-content: space-around;
+      }
+      .card{
+        background-color: white;
+        width: 27%;
+      }
+      .card h3,.card p{
+        padding: 5px 15px;
+      }
+
+      .card img{
+        width: 100%;
+        height: 40vh;
+      }
+
+
+      .about{
+        height: 100vh;
+      }
+
+
+      .main{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px;
+      }
+
+        .photo{
+          width: 35%;
+          position: relative;
+        }
+        .photo img{
+          width:100%;
+        }
+
+          .photo::before{
+            content: "";
+            height: 125%;
+            width: 65px;
+            background-color: #ccc;
+            position: absolute;
+            left: -10px;
+            top: -30px;
+            z-index: -2;
+          }
+
+        
+          .text2{
+          width:55%;
+           
+        }
+        .text2 p{
+          line-height: 30px;
+          padding: 20px;
+          margin-top: -3px;
+          position: relative;
+        }
+          .text2 :first-child{
+            font-weight: bold;}
+
+           .text2 :last-child{
+            color: var(--p-color);
+           font-weight: 200;
+          }
+          .text2 :last-child::before{
+            content: "";
+            height: 2px;
+            width: 45%;
+            background-color: #10CAB7;
+            position: absolute;
+            top: 0;
+          
+          }
+          .contact{
+            height: 70vh;
+            background-color: #F6F6F6;
+            }
+          .info{
+            display: flex;
+            justify-content: center;
+            flex-flow: nowrap column;
+            align-items: center;
+          }
+          .info h3{
+            font-size: 32px;
+            font-weight: 900;
+            color: #2C4755;
+            letter-spacing: -2px;
+          }
+
+            .mail{
+              color:var(--main-color) !important;
+              margin-top: -10px;
+            }
+
+
+            footer{
+              background-color: #2C4755;
+              width: 100%;
+              height:12vh;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              padding: 10px;
+            }
+            footer p{
+               margin:0;
+              color:white;
+            }
+            footer span{
+              color: var(--main-color);
+            }
+            
